@@ -1,1 +1,8 @@
-first = input("First:") second= input("Second:") sum = float(first)+float(second) print(sum)
+name: 'Sum of Two Numbers'
+runs:
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11.1' 
+    - run: python python_test.py
